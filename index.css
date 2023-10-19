@@ -12,6 +12,10 @@
 }
 .search{
     margin: 10px;
+    padding: 4px;
+}
+button{
+    cursor: pointer;
 }
  ul > li{
     list-style-type: none;
@@ -33,4 +37,7 @@
     padding: 20px;
     border: 1px solid black;
     margin: 10px;
+ }
+ .res-container:hover{
+    cursor: pointer;
  }
