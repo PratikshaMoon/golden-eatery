@@ -28,7 +28,7 @@ I have made a food ordering system. It will help the restaurant to do all the fu
 # 📝Steps to run
 <br>
 
-1. Clone this repository, using `git clone https://github.com/nirala96/Food-Ordering-App.git`
+1. Clone this repository, using `git clone https://github.com/PratikshaMoon/golden-eatery.git`
 
 2. Open in vs code and run `npm install`
 3. Once node_modules folder installed, run 'npm start'.
