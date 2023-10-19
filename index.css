@@ -1,0 +1,36 @@
+.header{
+    height: 160px;
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+.logo{
+    height: 150px;
+    padding: 2px;
+}
+.search{
+    margin: 10px;
+}
+ ul > li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: x-large;
+
+ }
+
+ ul{
+    padding-top: 30px;
+    padding-right: 100px;
+ }
+
+ .res-container{
+    width: 200px;
+    Height: 350px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+ }
