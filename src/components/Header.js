@@ -4,7 +4,7 @@ const Header = ()=> {
     return (
         <div className="header">
             <div>
-                <img className="logo" src={logo}/>
+                <img className="logo" src="https://cdn.freebiesupply.com/logos/thumbs/2x/the-eatery-logo.png"/>
             </div>
             <div>
                 <ul>
