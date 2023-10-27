@@ -1,10 +1,12 @@
 {
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "parcel": "^2.10.0",
     "process": "^0.11.10"
   },
   "name": "abc",
   "version": "1.0.0",
+  "homepage": "http://PratikshaMoon.github.io/golden-eatery",
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.5",
     "ansi-styles": "^4.3.0",
@@ -105,7 +107,11 @@
   },
   "scripts": {
     "start": "parcel index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "parcel build index.html",
     "test": "jest"
+    
   },
   "author": "pd moon",
   "license": "ISC",
