@@ -4,6 +4,8 @@ import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [resInfo, setResInfo] = useState([]);
+  const [copyData, setCopyData] = useState([])
+  const [searchText, setSearchText] = useState("")
 
   useEffect(() => {
     fetchData();
@@ -16,6 +18,7 @@ const Body = () => {
     setResInfo(
       data?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+    setCopyData(data?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   };
 
   return resInfo.length === 0 ? (
@@ -23,17 +26,27 @@ const Body = () => {
   ) : (
     <div>
       <div className="filter">
-        <button
+        <div>
+          <button
           onClick={() => {
             const filterTop = resInfo.filter((each) => each.info.avgRating > 4);
-            setResInfo(filterTop);
+            setCopyData(filterTop);
           }}
         >
           Top Restaurants
         </button>
+
+        <input type="text" className="searchText" value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
+        <button
+        onClick={()=>{
+          const searchData = resInfo.filter((a)=> a.info.name.toLowerCase().includes(searchText.toLowerCase()))
+          setCopyData(searchData)
+        }}
+        >Search🔍</button>
+        </div>
       </div>
       <div className="res-main">
-        {resInfo.map((e) => (
+        {copyData.map((e) => (
           <RestaurantCard key={e.info.id} resData={e} />
         ))}
       </div>
