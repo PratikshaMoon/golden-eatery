@@ -12,10 +12,16 @@ const Header = () => {
         />
       </div>
       <div>
-        <ul>
-          <li><Link to="/">Home </Link></li>
-          <li><Link to="/contact">Contact </Link></li>
-          <li><Link to="/about">About </Link></li>
+        <ul className="headerUl">
+          <li>
+            <Link to="/">Home </Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact </Link>
+          </li>
+          <li>
+            <Link to="/about">About </Link>
+          </li>
           <li>🛒</li>
           <button
             className="login-button"

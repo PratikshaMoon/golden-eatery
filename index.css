@@ -14,19 +14,18 @@
 .filter {
   margin: 10px;
   padding: 10px;
-
 }
-.searchText{
+.searchText {
   margin-left: 20px;
 }
-.filter:hover{
-   cursor: pointer;
-   border-color: red;
+.filter:hover {
+  cursor: pointer;
+  border-color: red;
 }
 button {
   cursor: pointer;
 }
-ul > li {
+.headerUl > li {
   list-style-type: none;
   display: inline-block;
   padding: 20px;
@@ -40,18 +39,17 @@ ul {
 
 .res-container {
   width: 200px;
-  
+
   background-color: #f0f0f0;
   padding: 5px;
   border: 1px solid black;
   margin: 5px;
   border-radius: 2%;
-  
 }
-.res-title{
+.res-title {
   width: 100%;
   height: 70px;
-  background-color:aliceblue;
+  background-color: aliceblue;
   padding: 2px 0px;
 }
 .res-main {
@@ -60,45 +58,38 @@ ul {
 }
 h4 {
   text-align: center;
-
 }
 .res-container:hover {
   cursor: pointer;
-  
-  
 }
 .heading {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
-  
 
   width: 100%;
-  
-  background-color:aliceblue;
- }
+
+  background-color: aliceblue;
+}
 .res-logo {
   width: 100%;
   height: 200px;
 }
- .shimmer{
-    width: 200px;
-    height: 350px;
-    background-color: #f0f0f0;
-    padding: 5px;
-    border: 1px solid black;
-    margin: 5px;
-  
- }
+.shimmer {
+  width: 200px;
+  height: 350px;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 5px;
+}
 
- .shimmer-container{
+.shimmer-container {
   display: flex;
   flex-wrap: wrap;
- }
+}
 
-
- .login-button {
+.login-button {
   background-color: #007bff; /* Background color */
   color: #fff; /* Text color */
   padding: 10px 20px; /* Padding around the text */
@@ -111,4 +102,127 @@ h4 {
 
 .login-button:hover {
   background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* ErrorPage.css */
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.error-content {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #e74c3c;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.error-content h1 {
+  font-size: 3rem;
+  color: #e74c3c;
+}
+
+.error-content p {
+  font-size: 1.2rem;
+  color: #333;
+}
+h3 {
+  text-align: center;
+  background-color: yellow;
+}
+
+/* styles.css (or any other appropriate CSS file) */
+
+/* Create a flex container to center the main content */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color */
+  padding: 1px; /* Padding around the content inside the footer */
+  text-align: center;
+  position: fixed; /* Position the footer at the bottom */
+  width: 100%; /* Make the footer the full width of the viewport */
+  bottom: 0; /* Place the footer at the bottom of the page */
+  height: 50px;
+}
+/* Style for the main container with a modern look */
+.resMenuData {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  max-width: 600px; /* Limit the width to make it more centered */
+}
+
+/* Style for the restaurant name with a stylish font */
+.resMenuData h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Style for the cuisine and cost information */
+.resMenuData p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Style for the menu section title with a vibrant color */
+.resMenuData h4 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #ff5722;
+}
+
+/* Style for the list of menu items with a modern look */
+.menuList {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* Style for individual menu items with a sleek border */
+.menuList li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.menuList li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Style for the shimmer loading component (you might have a separate CSS file for this) */
+/* Example: */
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
